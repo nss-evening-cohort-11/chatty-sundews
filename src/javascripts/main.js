@@ -1,3 +1,8 @@
 import '../styles/main.scss';
+import messageLimit from './components/messageLimit/messageLimit';
 
-console.error('hi');
+const init = () => {
+  messageLimit.getMessageLimit();
+};
+
+init();
