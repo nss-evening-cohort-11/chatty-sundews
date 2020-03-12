@@ -27,7 +27,7 @@ const messages = [
     id: 'user4',
     name: 'John',
     timestamp: 'March 10, 2020 6:16 PM',
-    text: 'Is pie the only thing on your mind? Listen your students need to know their sites need to include a meta tag.',
+    text: 'Is pie the only thing on your mind? Listen, your students need to know their sites need to include a meta tag.',
   },
   {
     id: 'user3',

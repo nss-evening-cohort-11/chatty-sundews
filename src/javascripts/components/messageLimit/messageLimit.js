@@ -1,5 +1,5 @@
 import './messageLimit.scss';
-import messages from '../../helpers/data/messages';
+import messages from '../../helpers/data/messageData';
 
 const getMessageLimit = () => {
   const myMessages = messages.getMessages();
