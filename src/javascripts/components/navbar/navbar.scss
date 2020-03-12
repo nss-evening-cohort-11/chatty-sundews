@@ -1,13 +1,10 @@
-nav {
-  height: auto;
-}
-.container {
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   display: flex;
-   flex-wrap: row;
+
+ .logo {
+   width:110px;
+   height: 105px;
+   margin: 20px;
  }
+ 
  /* HIDE RADIO */
 [type=radio] { 
   position: absolute;
@@ -23,8 +20,7 @@ nav {
 
 /* CHECKED STYLES */
 [type=radio]:checked + img {
-  width: 150px;
+  width: 100px;
   height: auto;
   border: 4px solid #82b8bc;
 }
-
