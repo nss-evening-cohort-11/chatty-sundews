@@ -16,7 +16,6 @@ body {
 .messageCard {
   background-color: $dark-color2;
   width: 100%;
-  color: $light-color2;
   margin: 10px;
   box-shadow: 3px 5px 5px black;
 
@@ -33,5 +32,9 @@ body {
 
   .messageText {
     color: whitesmoke;
+  }
+
+  .timestamp {
+    color: $light-color2;
   }
 }

@@ -8,11 +8,11 @@ const displayAllMessages = () => {
   chatMessages.forEach((message) => {
     domString += `
     <div class="messageCard" style="margin-right: 5px; margin-left: auto;">
-    <span class="closebtn" id="${message.id}">×</span>
-    <h3 class="messageName">${message.name}</h3>
-    <p class="messageText text-center">${message.text}</p>
-    <div class="timestamp">${message.timestamp}</div>
-  </div>
+      <span class="closebtn" id="${message.id}">x</span>
+      <h3 class="messageName">${message.name}</h3>
+      <p class="messageText text-center">${message.text}</p>
+      <div class="timestamp">${message.timestamp}</div>
+    </div>
     `;
   });
   utilities.printToDom('message-container', domString);
