@@ -1,3 +1,8 @@
 import '../styles/main.scss';
+import displayMessage from './components/displayMessage/displayMessage';
 
-console.error('hi');
+const init = () => {
+  displayMessage.displayAllMessages();
+};
+
+init();
