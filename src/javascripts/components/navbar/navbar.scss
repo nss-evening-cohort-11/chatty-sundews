@@ -1,3 +1,10 @@
+@import '../../../styles/colors.scss';
+
+nav{
+  max-height: 210px;
+  overflow: hidden;
+  font-size: 20px;
+}
 
  .logo {
    width:110px;
@@ -5,6 +12,7 @@
    margin: 5px;
  }
  
+
  /* HIDE RADIO */
 [type=radio] { 
   position: absolute;
