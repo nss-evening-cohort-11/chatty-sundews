@@ -18,7 +18,7 @@ const radioButtons = () => {
 };
 const loadNavbar = () => {
   let domString = '';
-  domString += '<nav class="navbar navbar-collapse fixed-top navbar-light bg-light container-fluid>';
+  domString += '<nav class="navbar navbar-custom navbar-collapse fixed-top navbar-light bg-light container-fluid>';
   domString += '  <div class="img-container">';
   domString += '    <img class="logo" src="src/img/sundew-smoozer.png" alt="Sundew Smoozers"></div>';
   domString += '      <div class="user-display mx-auto">';
