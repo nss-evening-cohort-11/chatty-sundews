@@ -7,7 +7,7 @@ const displayAllMessages = () => {
   const chatMessages = messageData.getMessages();
   chatMessages.forEach((message) => {
     domString += `
-      <div class="card">${message.name}</div>
+      <div class="card text-center">${message.name}</div>
     `;
   });
   utilities.printToDom('message-container', domString);
