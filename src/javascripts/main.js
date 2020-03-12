@@ -1,11 +1,11 @@
 import '../styles/main.scss';
-import displayMessage from './components/displayMessage/displayMessage';
 import nav from './components/navbar/navbar';
+import displayMessage from './components/displayMessage/displayMessage';
 
 
 const init = () => {
-  displayMessage.displayAllMessages();
   nav.loadNavbar();
+  displayMessage.displayAllMessages();
 };
 
 init();
