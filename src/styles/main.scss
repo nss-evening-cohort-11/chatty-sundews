@@ -1,5 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import '../styles/colors.scss';
 
 body {
@@ -8,6 +8,7 @@ body {
   display: block;
   background-color: $dark-color1;
   height: 100vh;
+  margin-top: 250px;
 }
 
 #message-container {
@@ -33,7 +34,7 @@ body {
   }
 
   .messageText {
-    color: whitesmoke;
+    color: $light-color2;
   }
 
   .timestamp {
