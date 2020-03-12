@@ -10,8 +10,33 @@ body {
   height: 100vh;
 }
 
-.card {
+#message-container {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.messageCard {
   background-color: $dark-color2;
-  width: 30%;
-  color: $light-color2;
+  width: 100%;
+  margin: 10px;
+  box-shadow: 3px 5px 5px black;
+
+  span {
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    color: $dark-color1;
+  }
+
+  .messageName {
+    color: $dark-color1;
+  }
+
+  .messageText {
+    color: whitesmoke;
+  }
+
+  .timestamp {
+    color: $light-color2;
+  }
 }
