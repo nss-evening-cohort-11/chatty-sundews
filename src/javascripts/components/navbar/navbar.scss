@@ -1,12 +1,15 @@
+.navbar-custom {
+  background: rgb(130,184,188);
+background: radial-gradient(circle, rgba(130,184,188,1) 0%, rgba(232,214,213,1) 50%, rgba(188,134,130,1) 100%);
+}
 
- .logo {
-   width:110px;
-   height: 105px;
-   margin: 20px;
+.logo {
+   width: 150px;
+   height: 150px;
  }
- 
+
  /* HIDE RADIO */
-[type=radio] { 
+[type=radio] {
   position: absolute;
   opacity: 0;
   width: 0;

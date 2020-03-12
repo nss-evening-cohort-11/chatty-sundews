@@ -5,9 +5,9 @@ import './navbar.scss';
 const loadNavbar = () => {
   const radioUser = getInfo.getUsers();
   let domString = '';
-  domString += '<nav class="nav fixed-top navbar-light bg-light container-fluid>';
+  domString += '<nav class="fixed-top navbar navbar-custom container-fluid>';
   domString += '  <div class="img-container">';
-  domString += '    <img class="logo" src="src/img/sundew-smoozer.png" alt="Sundew Smoozers"></div>';
+  domString += '    <img class="logo ml-4 mt-3" src="src/img/sundew-smoozer.png" alt="Sundew Smoozers"></div>';
   domString += '      <div class="user-display col d-flex justify-content-center"></div>';
   radioUser.forEach((user) => {
     domString += '      <div class="form-check-inline">';
