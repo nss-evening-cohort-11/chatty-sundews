@@ -1,6 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import '../styles/colors.scss';
 
 body {
-  background-color: aqua;
+  display: block;
+  background-color: $dark-color1;
+  height: 100vh;
+}
+
+.card {
+  background-color: $dark-color2;
+  width: 30%;
+  color: $light-color2;
 }
