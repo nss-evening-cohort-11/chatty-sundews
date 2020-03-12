@@ -1,3 +1,8 @@
 import '../styles/main.scss';
+import nav from './components/navbar/navbar';
 
-console.error('hi');
+const init = () => {
+  nav.loadNavbar();
+};
+
+init();
