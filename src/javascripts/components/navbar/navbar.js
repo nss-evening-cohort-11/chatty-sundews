@@ -3,8 +3,8 @@ import './navbar.scss';
 
 const loadNavbar = () => {
   let domString = '';
-  domString += '<nav>';
-  domString += '<div class="nav fixed-top navbar-light bg-light">';
+  domString += '<nav class="nav fixed-top navbar-light bg-light">';
+  domString += '<div class="nav-container">';
   domString += '  <img src="src/img/sundew-smoozer.png"  alt="Sundew Smoozers Logo" height="100">';
   domString += '   <form>';
   domString += '     <input class="form-control" type="text" placeholder="Enter message and hit ENTER" aria-label="text">';
