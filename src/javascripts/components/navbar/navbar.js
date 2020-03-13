@@ -22,8 +22,8 @@ const loadNavbar = () => {
   domString += '  </div>';
   domString += '  <div class="col-4 flex align-self-center">';
   domString += '    <div class="form-check row">';
-  domString += '      <input class="form-check-input" type="checkbox" value="dark theme" id="defaultCheck1">';
-  domString += '      <label class="form-check-label" for="defaultCheck1">Dark Theme</label>';
+  domString += '      <input class="form-check-input" type="checkbox" value="dark theme" id="darkModeBtn">';
+  domString += '      <label class="form-check-label" for="darkModeBtn">Dark Theme</label>';
   domString += '    </div>';
   domString += '    <div class="form-check row">';
   // Just changed the for and the Id for the large-text checkbox so that I will be able to use it.
