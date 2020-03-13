@@ -19,10 +19,13 @@ Sundew Smoozer is a messaging application that allows the user to enter their na
 
 ## How to run:
 
-Clone down this project from Github
-Install http-server from npm
-At the root of this project, run the following command: hs -p 8080
-In your browser, navigate to https://localhost:8080
+* Clone down this project from Github
+
+* Install http-server from npm
+
+* At the root of this project, run the following command: hs -p 8080
+
+* In your browser, navigate to https://localhost:8080
 
 ## Contributors:
 
