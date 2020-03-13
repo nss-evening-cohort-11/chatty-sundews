@@ -1,0 +1,38 @@
+.dark {
+  span {
+    color: #e8d6d5;
+  }
+
+  .messageName {
+    color: #e8d6d5;
+  }
+
+  .messageText {
+    color: #e8d6d5;
+  }
+
+  .timestamp {
+    color: #e8d6d5;
+}
+}
+
+.dark-display {
+  .messageCard {
+    background-color: #415c5e;
+    margin-left: 5px;
+    max-width: 50%;
+    min-width: 80px;
+    padding: 8px;
+    border-radius: 18px;
+    margin: 0 auto;
+  }
+
+  .navbar-custom {
+    background: rgb(65,92,94);
+    background: radial-gradient(circle, rgba(65,92,94,1) 3%, rgba(190,140,137,1) 50%, rgba(118,64,60,1) 100%);
+  }
+
+  p {
+    color: #e8d6d5;
+  }
+}
