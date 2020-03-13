@@ -17,6 +17,12 @@ Sundew Smoozer is a messaging application that allows the user to enter their na
 
 ![sundew-smoozer](https://user-images.githubusercontent.com/51214463/76663154-2b81c200-654e-11ea-8b6f-8320786ed6b8.png)
 
+Large-Text
+![Sundew dark-mode](https://user-images.githubusercontent.com/51214463/76664578-ddbb8880-6552-11ea-941d-6fc8d0197414.PNG)
+
+Dark-Mode
+![Sundew large-text](https://user-images.githubusercontent.com/51214463/76664555-cbd9e580-6552-11ea-8171-442b7abedafa.PNG)
+
 ## How to run:
 
 * Clone down this project from Github
