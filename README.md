@@ -27,6 +27,9 @@ In your browser, navigate to https://localhost:8080
 ## Contributors:
 
 [Anca Simon](https://github.com/ancasimon)
+
 [Sarah Holder](https://github.com/sarahholder)
+
 [Jose Marquez](https://github.com/Jmarquez8951)
+
 [John Johnson](https://github.com/John-Ryan-Johnson)
