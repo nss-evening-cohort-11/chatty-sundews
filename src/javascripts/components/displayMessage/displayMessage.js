@@ -3,8 +3,8 @@ import messageData from '../../helpers/data/messageData';
 import utilities from '../../helpers/utilities';
 import addMessage from '../addMessage/addMessage';
 
-const displayAllMessages = (messages) => {
-  messageData.setUpdatedMessageArray();
+const displayAllMessages = () => {
+  const messages = messageData.setUpdatedMessageArray();
   console.error(messageData.setUpdatedMessageArray());
   let domString = '<div>';
   messages.forEach((message) => {

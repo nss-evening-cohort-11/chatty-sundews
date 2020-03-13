@@ -39,6 +39,7 @@ const messages = [
 
 const setUpdatedMessageArray = (newMessageObject) => {
   messages.push(newMessageObject);
+  console.error(setUpdatedMessageArray());
 };
 
 const getMessages = () => messages;
