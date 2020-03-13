@@ -11,7 +11,7 @@ const radioButtons = () => {
     domString += '    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="small">';
     domString += `    <img class="p-1 form-check-label rounded-circle" src="${user.imgUrl}" width="60px" height="60px">`;
     domString += `    <p class="text-center">${user.name}</p>`;
-    domString += '   </label>';
+    domString += '  </label>';
     domString += '</div>';
   });
   return domString;
