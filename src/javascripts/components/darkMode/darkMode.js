@@ -3,8 +3,10 @@ import './darkMode.scss';
 const makeDark = () => {
   if ($('#darkModeBtn[type=checkbox]').is(':checked')) {
     $('#message-container').addClass('dark dark-display');
+    $('#nav-container').addClass('dark dark-display');
   } else {
     $('#message-container').removeClass('dark dark-display');
+    $('#nav-container').removeClass('dark dark-display');
   }
 };
 
