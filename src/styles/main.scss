@@ -3,10 +3,8 @@
 @import '../styles/colors.scss';
 
 body {
-  margin-top: 250px;
-  background-color: aqua;
   display: block;
-  background-color: $dark-color1;
+  background-color: $light-color3;
   height: 100vh;
   margin-top: 250px;
 }
@@ -17,8 +15,8 @@ body {
 }
 
 .messageCard {
-  background-color: $dark-color2;
-  width: 100%;
+  background-color: $light-color4;
+  width: 700px;
   margin: 10px;
   box-shadow: 3px 5px 5px black;
 
@@ -26,11 +24,11 @@ body {
     width: 20px;
     height: 20px;
     font-size: 25px;
-    color: $dark-color1;
+    color: $light-color3;
   }
 
   .messageName {
-    color: $dark-color1;
+    color: $light-color3;
   }
 
   .messageText {

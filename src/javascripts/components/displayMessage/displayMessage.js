@@ -7,7 +7,7 @@ const displayAllMessages = () => {
   const chatMessages = messageData.getMessages();
   chatMessages.forEach((message) => {
     domString += `
-    <div class="messageCard" style="margin-right: 5px; margin-left: auto;">
+    <div class="messageCard mb-3">
       <span class="closebtn" id="${message.id}">x</span>
       <h3 class="messageName">${message.name}</h3>
       <p class="messageText text-center">${message.text}</p>
