@@ -1,0 +1,30 @@
+.dark {
+  span {
+    color: #e8d6d5;
+  }
+
+  .messageName {
+    color: #e8d6d5;
+  }
+
+  .messageText {
+    color: #e8d6d5;
+  }
+
+  .timestamp {
+    color: #e8d6d5;
+}
+}
+
+.dark-display {
+  .messageCard {
+    background-color: #415c5e;
+    margin-left: 5px;
+    max-width: 50%;
+    min-width: 80px;
+    padding: 8px;
+    border-radius: 18px;
+    margin: 0 auto;
+  }
+
+}
