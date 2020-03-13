@@ -13,14 +13,13 @@ const displayAllMessages = () => {
       <div class="closebtn"><i class="fas fa-trash" id="${message.id}"></i>
       </div>
       <div>
-          <img src=${user.imgUrl} class="img-rounded col-3" alt="user">
+        <img src=${user.imgUrl} class="img-rounded col-3" alt="user">
           <div class="card-body p-0 col-11">
-          <h3 class="messageName card-text">${user.name}</h3>
-          <p class="messageText text-center card-text d-flex flex-wrap">${message.text}</p>
-          <div class="timestamp">${message.timestamp}</div>
-        </div>
+            <h3 class="messageName card-text">${user.name}</h3>
+              <p class="messageText text-center card-text d-flex flex-wrap">${message.text}</p>
+              <p class="timestamp"><small>${message.timestamp}</small></p>
+          </div>
       </div>
-    </div>
     </div>`;
   });
 

@@ -22,7 +22,7 @@ const loadNavbar = () => {
   domString += '    <img class="logo navbar-brand" src="src/img/sundew-smoozer.png" alt="Sundew Smoozers">';
   domString += `    <div class="user-display mx-auto">${radioButtons()}`;
   domString += '    </div>';
-  domString += '    <div class="col-6 flex align-self-center">';
+  domString += '    <div class="col-2 flex align-self-center">';
   domString += '      <div class="form-check row">';
   domString += '        <input class="form-check-input" type="checkbox" value="dark-theme" id="defaultCheck1">';
   domString += '        <label class="form-check-label" for="defaultCheck1">Dark Theme</label>';
