@@ -1,0 +1,25 @@
+#message-container {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.messageCard {
+  margin-left: 5px;
+  max-width: 50%;
+  min-width: 80px;
+  padding: 8px;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.closebtn {
+  top: 2px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  float: right;
+}
+
+.timestamp {
+  font-style: italic;
+}

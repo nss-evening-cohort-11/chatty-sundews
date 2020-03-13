@@ -1,6 +1,41 @@
-@import "~bootstrap/scss/bootstrap";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '../styles/colors.scss';
 
 body {
-  background-color: aqua;
+  display: block;
+  background-color: $light-color3;
+  height: 100vh;
+  margin-top: 250px;
+}
+
+#message-container {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.messageCard {
+  background-color: $light-color4;
+  width: 700px;
+  margin: 10px;
+  box-shadow: 3px 5px 5px black;
+
+  span {
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    color: $light-color3;
+  }
+
+  .messageName {
+    color: $light-color3;
+  }
+
+  .messageText {
+    color: $light-color2;
+  }
+
+  .timestamp {
+    color: $light-color2;
+  }
 }
