@@ -1,12 +1,30 @@
+
+@import '../../../styles/colors.scss';
+
+.navbar{
+  max-height: 230px;
+  overflow: auto;
+  font-size: 20px;
+  text-align: center;
+}
+button {
+  background-color: $dark-color2 !important;
+}
+ .logo {
+   width:110px;
+   height: 105px;
+   margin: 5px;
+ }
+ 
+ .checkbox {
+   text-align: center;
+ }
+ 
+ /* HIDE RADIO */
 .navbar-custom {
   background: rgb(130,184,188);
   background: radial-gradient(circle, rgba(130,184,188,1) 0%, rgba(232,214,213,1) 50%, rgba(188,134,130,1) 100%);
 }
-
-.logo {
-   width: 150px;
-   height: 150px;
- }
 
   /* HIDE RADIO */
 [type=radio] {
@@ -23,7 +41,7 @@
 
 /* CHECKED STYLES */
 [type=radio]:checked + img {
-  width: 100px;
+  width: 75px;
   height: auto;
-  border: 4px solid #82b8bc;
+  border: 3px solid $dark-color3;
 }
