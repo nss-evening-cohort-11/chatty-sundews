@@ -7,4 +7,8 @@ const clearMessageButton = () => {
   utilities.printToDom('message-container', domString);
 };
 
-export default { clearMessageButton };
+const clearMessageFunction = () => {
+  $('body').on('click', '#btn-clear', clearMessageButton());
+};
+
+export default { clearMessageButton, clearMessageFunction };

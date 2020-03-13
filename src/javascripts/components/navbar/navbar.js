@@ -1,7 +1,6 @@
 import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
 import addMessage from '../addMessage/addMessage';
-import clearMessages from '../clearMessages/clearMessages';
 import './navbar.scss';
 
 const loadNavbar = () => {
@@ -43,13 +42,14 @@ const loadNavbar = () => {
   domString += '</nav>';
 
   utilities.printToDom('nav-container', domString);
-  // eslint-disable-next-line prefer-arrow-callback
-  $('#messageInputField').keypress(function (event) {
+};
+
+const events = () => {
+  $('messageInputField').keypress((event) => {
     if (event.which === 13) {
       addMessage.buildNewMessageObject();
     }
   });
-  $('body').on('click', '#btn-clear', clearMessages.clearMessageButton());
 };
 
-export default { loadNavbar };
+export default { loadNavbar, events };

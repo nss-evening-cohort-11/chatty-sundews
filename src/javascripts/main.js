@@ -1,20 +1,19 @@
 import '../styles/main.scss';
-import clearMessages from './components/clearMessages/clearMessages';
 import nav from './components/navbar/navbar';
 import messageLimit from './components/messageLimit/messageLimit';
-// import displayMessage from './components/displayMessage/displayMessage';
 import largeText from './components/largeText/largeText';
 import addMessage from './components/addMessage/addMessage';
+import clearMessages from './components/clearMessages/clearMessages';
 
 console.error('hi');
 
 const init = () => {
   nav.loadNavbar();
-  // displayMessage.displayAllMessages();
+  nav.events();
+  clearMessages.clearMessageFunction();
   addMessage.buildNewMessageObject();
   largeText.largeTextEvents();
   messageLimit.getMessageLimit();
-  clearMessages.clearMessages();
 };
 
 init();
