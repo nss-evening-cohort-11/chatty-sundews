@@ -8,8 +8,7 @@ const displayAllMessages = () => {
   // let domString = '<div>';
   // messages.forEach((message) => {
   //   domString += addMessage.buildMessageCard(message);
-  // let domString = '';
-  const messages = messageData.setUpdatedMessageArray();
+  const messages = messageData.getMessages();
   let domString = '<div>';
   messages.forEach((message) => {
     domString += '<div class="messageCard mb-3">';

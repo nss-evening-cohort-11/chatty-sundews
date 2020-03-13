@@ -1,5 +1,6 @@
 import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
+import addMessage from '../addMessage/addMessage';
 import './navbar.scss';
 
 const loadNavbar = () => {
@@ -34,13 +35,19 @@ const loadNavbar = () => {
   domString += '  </div>';
   domString += '<div class="container-fluid pb-3">';
   domString += '    <form class="col-9 offset-md-2 d-inline-flex">';
-  domString += '      <input class="form-control col-8" type="text" placeholder="Enter message and hit ENTER" aria-label="text">';
+  domString += '      <input class="form-control id="messageInputField" col-8" type="text" placeholder="Enter message and hit ENTER" aria-label="text">';
   domString += '      <button class="btn btn-secondary btn-block ml-2">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
   domString += '</nav>';
 
   utilities.printToDom('nav-container', domString);
+  // eslint-disable-next-line prefer-arrow-callback
+  $('#messageInputField').keypress(function (event) {
+    if (event.which === 13) {
+      addMessage.buildNewMessageObject();
+    }
+  });
 };
 
 export default { loadNavbar };
