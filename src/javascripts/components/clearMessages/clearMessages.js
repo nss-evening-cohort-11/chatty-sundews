@@ -8,6 +8,7 @@ const clearMessageButton = () => {
 };
 
 const clearMessageFunction = () => {
+  console.error('button click works');
   $('body').on('click', '#btn-clear', clearMessageButton());
 };
 
