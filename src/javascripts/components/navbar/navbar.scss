@@ -6,7 +6,9 @@
   font-size: 20px;
   text-align: center;
 }
-
+button {
+  background-color: $dark-color2 !important;
+}
  .logo {
    width:110px;
    height: 105px;
@@ -40,5 +42,5 @@
 [type=radio]:checked + img {
   width: 75px;
   height: auto;
-  border: 3px solid #82b8bc;
+  border: 3px solid $dark-color3;
 }

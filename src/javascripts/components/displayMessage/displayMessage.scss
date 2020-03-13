@@ -7,8 +7,6 @@
 }
 .messageCard {
   margin-left: 5px;
-  max-width: 50%;
-  min-height: 200px;
   padding: 8px;
   border-radius: 18px;
   margin: 0 auto;
@@ -17,7 +15,7 @@
 .closebtn {
   top: 2px;
   right: 15px;
-  font-size: 25px;
+  font-size: 1.5rem;
   cursor: pointer;
   float: right;
   color: $light-color3;
