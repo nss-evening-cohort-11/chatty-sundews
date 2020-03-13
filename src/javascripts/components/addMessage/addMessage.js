@@ -10,8 +10,8 @@ const buildNewMessageObject = () => {
     text: document.getElementById('messageInputField').value,
   };
   console.error(newMessageObject);
-  // messageData.setUpdatedMessageArray(newMessageObject);
-  // console.error(allMessages);
+  messageData.setUpdatedMessageArray(newMessageObject);
+  console.error(allMessages);
   displayMessage.displayAllMessages();
 };
 
