@@ -1,6 +1,7 @@
 import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
 import addMessage from '../addMessage/addMessage';
+import clearMessages from '../clearMessages/clearMessages';
 import './navbar.scss';
 
 const loadNavbar = () => {
@@ -35,8 +36,8 @@ const loadNavbar = () => {
   domString += '  </div>';
   domString += '<div class="container-fluid pb-3">';
   domString += '    <form class="col-9 offset-md-2 d-inline-flex">';
-  domString += '      <input class="form-control id="messageInputField" col-8" type="text" placeholder="Enter message and hit ENTER" aria-label="text">';
-  domString += '      <button class="btn btn-secondary btn-block ml-2">CLEAR</button>';
+  domString += '      <input class="form-control col-8" id="messageInputField" type="text" placeholder="Enter message and hit ENTER" aria-label="text">';
+  domString += '      <button class="btn btn-secondary btn-block ml-2" id="btn-clear">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
   domString += '</nav>';
@@ -48,6 +49,7 @@ const loadNavbar = () => {
       addMessage.buildNewMessageObject();
     }
   });
+  $('body').on('click', '#btn-clear', clearMessages.clearMessageButton());
 };
 
 export default { loadNavbar };
