@@ -1,3 +1,5 @@
+@import '../../../styles/colors.scss';
+
 #message-container {
   margin-top: 45px;
   display: flex;
@@ -6,7 +8,7 @@
 .messageCard {
   margin-left: 5px;
   max-width: 50%;
-  min-width: 80px;
+  min-height: 200px;
   padding: 8px;
   border-radius: 18px;
   margin: 0 auto;
@@ -18,8 +20,22 @@
   font-size: 25px;
   cursor: pointer;
   float: right;
+  color: $light-color3;
 }
 
 .timestamp {
   font-style: italic;
+  text-align: center;
+}
+
+.img-rounded {
+  border-radius: 50%;
+  max-height: 175px;
+}
+img{
+  float: left;
+}
+
+i{
+  float: right;
 }

@@ -18,29 +18,24 @@ const radioButtons = () => {
 };
 const loadNavbar = () => {
   let domString = '';
-  domString += '<nav class="navbar navbar-custom navbar-collapse nav-expand-lg fixed-top navbar-light bg-light container-fluid>';
-  domString += '  <div class="img-container">';
-  domString += '    <img class="logo" src="src/img/sundew-smoozer.png" alt="Sundew Smoozers">';
-  domString += '</div>';
-  domString += '      <div class="user-display mx-auto">';
-  domString += `  <div>${radioButtons()}</div>`;
-  domString += '  </div>';
-  domString += '  <div class="col-4 flex align-self-center nav-item">';
-  domString += '    <div class="form-check row">';
-  domString += '      <input class="form-check-input" type="checkbox" value="dark theme" id="defaultCheck1">';
-  domString += '      <label class="form-check-label" for="defaultCheck1">Dark Theme</label>';
+  domString += '<nav class="navbar navbar-custom fixed-top navbar-light bg-light justify-content-center">';
+  domString += '    <img class="logo navbar-brand" src="src/img/sundew-smoozer.png" alt="Sundew Smoozers">';
+  domString += `    <div class="user-display mx-auto">${radioButtons()}`;
   domString += '    </div>';
-  domString += '    <div class="form-check row">';
-  // Just changed the for and the Id for the large-text checkbox so that I will be able to use it.
-  domString += '      <input class="form-check-input" type="checkbox" value="large-text" id="largeTextBtn">';
-  domString += '      <label class="form-check-label" for="largeTextBtn">Large Text </label>';
-  // End of my changes - Jose Marquez
+  domString += '    <div class="col-6 flex align-self-center">';
+  domString += '      <div class="form-check row">';
+  domString += '        <input class="form-check-input" type="checkbox" value="dark-theme" id="defaultCheck1">';
+  domString += '        <label class="form-check-label" for="defaultCheck1">Dark Theme</label>';
+  domString += '      </div>';
+  domString += '      <div class="form-check row">';
+  domString += '        <input class="form-check-input" type="checkbox" value="large-text" id="largeTextBtn">';
+  domString += '        <label class="form-check-label" for="largeTextBtn">Large Text</label>';
+  domString += '      </div>';
   domString += '    </div>';
-  domString += '  </div>';
   domString += '<div class="container-fluid pb-3">';
-  domString += '    <form class="col-10 offset-md-1 d-inline-flex">';
-  domString += '      <input class="form-control col-10" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
-  domString += '      <button class="btn btn-secondary  btn-block ml-1">CLEAR</button>';
+  domString += '    <form class="col-8 d-inline-flex">';
+  domString += '      <input class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
+  domString += '      <button class="btn btn-secondary  btn-block ml-5">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
   domString += '</nav>';

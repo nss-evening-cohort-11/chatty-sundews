@@ -1,11 +1,13 @@
 @import '../../../styles/colors.scss';
 
 nav{
-  // max-height: 210px;
-  // overflow: scroll;
+  max-height: 230px;
+  overflow: auto;
   font-size: 20px;
 }
+.container { 
 
+}
  .logo {
    width:110px;
    height: 105px;
@@ -33,7 +35,7 @@ nav{
 
 /* CHECKED STYLES */
 [type=radio]:checked + img {
-  width: 100px;
+  width: 75px;
   height: auto;
-  border: 4px solid #82b8bc;
+  border: 3px solid #82b8bc;
 }
