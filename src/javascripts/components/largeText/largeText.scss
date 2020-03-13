@@ -1,0 +1,20 @@
+.large-text {
+  span {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .timestamp {
+    font-size: 25px;
+  }
+}
+
+.new-display {
+  .messageCard {
+    flex-flow: column nowrap;
+  }
+}
