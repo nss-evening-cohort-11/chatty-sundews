@@ -11,7 +11,7 @@ console.error('hi');
 const init = () => {
   navbar.loadNavbar();
   navbar.events();
-  clearMessages.clearMessageFunction();
+  clearMessages.clearMessageEvent();
   addMessage.buildNewMessageObject();
   largeText.largeTextEvents();
   messageLimit.getMessageLimit();

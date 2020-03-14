@@ -1,6 +1,6 @@
 import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
-import addMessage from '../addMessage/addMessage';
+// import addMessage from '../addMessage/addMessage';
 import './navbar.scss';
 
 const radioButtons = () => {
@@ -55,12 +55,13 @@ const events = () => {
   //     addMessage.buildNewMessageObject();
   //   }
   // });
-  $('#messageInputField').keypress((event) => {
-    const keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode === '13') {
-      addMessage.buildNewMessageObject();
-    }
-  });
+  // $('#messageInputField').keypress((event) => {
+  //   const keycode = (event.keyCode ? event.keyCode : event.which);
+  //   if (keycode === '13') {
+  //     addMessage.buildNewMessageObject();
+  //   }
+  // });
+  $('messageInputField').keypress(console.error('hi'));
 };
 
 export default { loadNavbar, events };

@@ -1,15 +1,15 @@
 import utilities from '../../helpers/utilities';
 
-const clearMessageButton = () => {
+const clearMessageAction = (e) => {
+  e.preventDefault();
   let domString = '<div>';
   domString += '';
   domString += '</div>';
   utilities.printToDom('message-container', domString);
 };
 
-const clearMessageFunction = () => {
-  console.error('clear button click works');
-  // $('body').on('click', '#btn-clear', clearMessageButton());
+const clearMessageEvent = () => {
+  $('#btn-clear').on('click', clearMessageAction);
 };
 
-export default { clearMessageButton, clearMessageFunction };
+export default { clearMessageAction, clearMessageEvent };
