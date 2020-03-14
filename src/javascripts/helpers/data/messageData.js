@@ -43,7 +43,7 @@ const setUpdatedMessageArray = (newMessageObject) => {
 
 const getMessages = () => {
   if (messages.length > 20) {
-    messages.splice(20);
+    messages.slice(-20);
     return messages;
   } return messages;
 };
