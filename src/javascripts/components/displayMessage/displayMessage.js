@@ -20,7 +20,7 @@ const displayAllMessages = () => {
           </div>
       </div>
     </div>`;
-    return findUser;
+    return (findUser);
   });
   utilities.printToDom('message-container', domString);
 };
