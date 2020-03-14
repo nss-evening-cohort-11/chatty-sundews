@@ -5,7 +5,6 @@ import displayMessage from './components/displayMessage/displayMessage';
 import largeText from './components/largeText/largeText';
 import darkMode from './components/darkMode/darkMode';
 
-
 const init = () => {
   navL.loadNavbar();
   displayMessage.displayAllMessages();
