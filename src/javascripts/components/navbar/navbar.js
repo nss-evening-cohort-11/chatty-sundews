@@ -36,7 +36,7 @@ const loadNavbar = () => {
   domString += '    </div>';
   domString += '<div class="container-fluid pb-3">';
   domString += '    <form class="col-8 d-inline-flex">';
-  domString += '      <input id="messageInputField" class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
+  domString += '      <input id="messageInputField" class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text" required>';
   domString += '      <button id="btn-clear" class="btn btn-block ml-5">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
