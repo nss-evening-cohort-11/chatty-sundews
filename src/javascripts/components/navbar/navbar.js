@@ -47,6 +47,7 @@ const loadNavbar = () => {
 const events = () => {
   $('#messageInputField').keypress((event) => {
     if (event.keyCode === 13) {
+      event.preventDefault();
       addMessage.buildNewMessageObject();
     }
   });

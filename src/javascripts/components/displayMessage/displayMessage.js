@@ -3,8 +3,9 @@ import messageData from '../../helpers/data/messageData';
 import utilities from '../../helpers/utilities';
 
 const displayAllMessages = () => {
+  const allMessages = messageData.getMessages();
   let domString = '';
-  messageData.getMessages().forEach((message) => {
+  allMessages.forEach((message) => {
     // const user = users.find((x) => x.id === message.id);
     domString += `
     <div id="${message.messageId}" class="messageCard card mb-3">
