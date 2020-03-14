@@ -4,6 +4,7 @@ import messageLimit from './components/messageLimit/messageLimit';
 import displayMessage from './components/displayMessage/displayMessage';
 import largeText from './components/largeText/largeText';
 import darkMode from './components/darkMode/darkMode';
+import giphyJs from './components/giphy/giphy';
 
 
 const init = () => {
@@ -12,6 +13,7 @@ const init = () => {
   largeText.largeTextEvents();
   messageLimit.getMessageLimit();
   darkMode.makeDarkEvents();
+  giphyJs.giphyFunction();
 };
 
 init();
