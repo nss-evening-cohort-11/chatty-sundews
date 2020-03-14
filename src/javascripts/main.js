@@ -1,4 +1,5 @@
 import '../styles/main.scss';
+// import navL from './components/navbar/navbar';
 import navbar from './components/navbar/navbar';
 import messageLimit from './components/messageLimit/messageLimit';
 import largeText from './components/largeText/largeText';

@@ -1,17 +1,20 @@
 import './displayMessage.scss';
 import messageData from '../../helpers/data/messageData';
+import userData from '../../helpers/data/userData';
 import utilities from '../../helpers/utilities';
 
 const displayAllMessages = () => {
+  const users = userData.getUsers();
   const allMessages = messageData.getMessages();
   let domString = '';
   allMessages.forEach((message) => {
-    // const user = users.find((x) => x.id === message.id);
+    const user = users.find((x) => x.id === message.id);
     domString += `
     <div id="${message.messageId}" class="messageCard card mb-3">
       <div id="close-button" class="closebtn"><i class="fas fa-trash"></i>
       </div>
       <div>
+      <img src=${user.imgUrl} class="img-rounded col-3" alt="user">
           <div class="card-body p-0">
               <p class="messageText text-center card-text">${message.text}</p>
               <p class="timestamp"><small>${message.timestamp}</small></p>
