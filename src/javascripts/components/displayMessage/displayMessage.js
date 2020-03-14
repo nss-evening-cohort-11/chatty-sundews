@@ -24,6 +24,7 @@ const displayAllMessages = () => {
   });
   utilities.printToDom('message-container', domString);
 };
+
 const deleteMessageEvent = (e) => {
   const selectedMessage = e.target.closest('.card').id;
   const messages = messageData.getMessages();
