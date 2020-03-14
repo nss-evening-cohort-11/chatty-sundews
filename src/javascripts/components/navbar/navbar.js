@@ -42,7 +42,6 @@ const loadNavbar = () => {
   domString += '    </form>';
   domString += '</div>';
   domString += '</nav>';
-
   utilities.printToDom('nav-container', domString);
 };
 

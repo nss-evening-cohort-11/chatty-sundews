@@ -6,7 +6,6 @@ import largeText from './components/largeText/largeText';
 import darkMode from './components/darkMode/darkMode';
 import giphyJs from './components/giphy/giphy';
 
-
 const init = () => {
   navL.loadNavbar();
   displayMessage.displayAllMessages();
