@@ -6,8 +6,6 @@ import clearMessages from './components/clearMessages/clearMessages';
 import darkMode from './components/darkMode/darkMode';
 import displayMessage from './components/displayMessage/displayMessage';
 
-console.error('hi');
-
 const init = () => {
   navbar.loadNavbar();
   displayMessage.displayAllMessages();
