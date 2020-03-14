@@ -1,6 +1,7 @@
 import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
 import './navbar.scss';
+import addMessage from '../addMessage/addMessage';
 
 const radioButtons = () => {
   const radioUser = getInfo.getUsers();
@@ -35,12 +36,21 @@ const loadNavbar = () => {
   domString += '    </div>';
   domString += '<div class="container-fluid pb-3">';
   domString += '    <form class="col-8 d-inline-flex">';
-  domString += '      <input class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
-  domString += '      <button class="btn btn-block ml-5">CLEAR</button>';
+  domString += '      <input id="messageInputField" class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
+  domString += '      <button id="btn-clear" class="btn btn-block ml-5">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
   domString += '</nav>';
   utilities.printToDom('nav-container', domString);
 };
 
-export default { loadNavbar };
+const events = () => {
+  $('#messageInputField').keypress((event) => {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      addMessage.buildNewMessageObject();
+    }
+  });
+};
+
+export default { loadNavbar, events };
