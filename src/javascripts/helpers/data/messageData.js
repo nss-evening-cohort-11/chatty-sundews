@@ -37,10 +37,10 @@ const messages = [
   },
 ];
 
-const getMessages = () => messages;
-
 const setUpdatedMessageArray = (newMessageObject) => {
   messages.push(newMessageObject);
 };
+
+const getMessages = () => messages;
 
 export default { getMessages, setUpdatedMessageArray };

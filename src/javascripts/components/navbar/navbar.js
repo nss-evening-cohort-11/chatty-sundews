@@ -36,8 +36,8 @@ const loadNavbar = () => {
   domString += '    </div>';
   domString += '<div class="container-fluid pb-3">';
   domString += '    <form class="col-8 d-inline-flex">';
-  domString += '      <input class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
-  domString += '      <button class="btn btn-block ml-5">CLEAR</button>';
+  domString += '      <input id="messageInputField" class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
+  domString += '      <button id="btn-clear" class="btn btn-block ml-5">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
   domString += '</nav>';
@@ -46,8 +46,18 @@ const loadNavbar = () => {
 };
 
 const events = () => {
-  $('messageInputField').keypress((event) => {
-    if (event.which === 13) {
+  // const keyCode = event.which;
+  // if (keyCode === 13) {
+  //   document.getElementById('messageInputField').addEventListener('keypress(event)', addMessage.buildNewMessageObject);
+  // }
+  // $('messageInputField').keypress((event) => {
+  //   if (event.which === 13) {
+  //     addMessage.buildNewMessageObject();
+  //   }
+  // });
+  $('#messageInputField').keypress((event) => {
+    const keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode === '13') {
       addMessage.buildNewMessageObject();
     }
   });

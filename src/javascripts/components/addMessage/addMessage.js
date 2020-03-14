@@ -9,9 +9,10 @@ const buildNewMessageObject = () => {
     messageId: `message${allMessages.length + 1}`,
     text: document.getElementById('messageInputField').value,
   };
-  console.error(newMessageObject);
-  messageData.setUpdatedMessageArray(newMessageObject);
-  console.error(allMessages);
+  allMessages.push(newMessageObject);
+  console.error('new message here', newMessageObject);
+  // messageData.setUpdatedMessageArray(newMessageObject);
+  console.error('all messages listed here', allMessages);
   displayMessage.displayAllMessages();
 };
 
