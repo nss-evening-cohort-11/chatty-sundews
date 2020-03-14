@@ -6,7 +6,7 @@ const buildNewMessageObject = () => {
   const allMessages = messageData.getMessages();
   console.error(allMessages);
   const newMessageObject = {
-    id: `message${allMessages.length + 1}`,
+    messageId: `message${allMessages.length + 1}`,
     text: document.getElementById('messageInputField').value,
   };
   console.error(newMessageObject);
