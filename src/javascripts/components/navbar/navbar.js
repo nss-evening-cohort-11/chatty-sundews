@@ -37,7 +37,7 @@ const loadNavbar = () => {
   domString += '    <form class="col-8 d-inline-flex">';
   domString += '      <input id="test" class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
   // Added the gif button and elements - Jose Marquez
-  domString += '      <button id="giph-btn" class="btn col-2 ml-2">Add Gif</button>';
+  domString += '      <button type="button" id="giph-btn" class="btn col-2 ml-2" data-toggle="modal" data-target="#exampleModal">Add Gif</button>';
   domString += '      <button class="btn btn-block ml-5">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
