@@ -1,7 +1,7 @@
 import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
-// import addMessage from '../addMessage/addMessage';
 import './navbar.scss';
+import addMessage from '../addMessage/addMessage';
 
 const radioButtons = () => {
   const radioUser = getInfo.getUsers();
@@ -46,22 +46,11 @@ const loadNavbar = () => {
 };
 
 const events = () => {
-  // const keyCode = event.which;
-  // if (keyCode === 13) {
-  //   document.getElementById('messageInputField').addEventListener('keypress(event)', addMessage.buildNewMessageObject);
-  // }
-  // $('messageInputField').keypress((event) => {
-  //   if (event.which === 13) {
-  //     addMessage.buildNewMessageObject();
-  //   }
-  // });
-  // $('#messageInputField').keypress((event) => {
-  //   const keycode = (event.keyCode ? event.keyCode : event.which);
-  //   if (keycode === '13') {
-  //     addMessage.buildNewMessageObject();
-  //   }
-  // });
-  $('messageInputField').keypress(console.error('hi'));
+  $('#messageInputField').keypress((event) => {
+    if (event.keyCode === 13) {
+      addMessage.buildNewMessageObject();
+    }
+  });
 };
 
 export default { loadNavbar, events };
