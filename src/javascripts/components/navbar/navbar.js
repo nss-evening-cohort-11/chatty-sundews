@@ -36,7 +36,7 @@ const loadNavbar = () => {
   domString += '    </div>';
   domString += '<div class="container-fluid pb-3">';
   domString += '    <form class="col-8 d-inline-flex">';
-  domString += '      <input id="messageInputField" class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text" required>';
+  domString += '      <input id="messageInputField" class="form-control col-12" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
   domString += '      <button id="btn-clear" class="btn btn-block ml-5">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
@@ -44,13 +44,42 @@ const loadNavbar = () => {
   utilities.printToDom('nav-container', domString);
 };
 
+const alertTextValidation = () => {
+  let domString = '';
+  domString += '<div id="textAlert" class="modal" tabindex="-1" role="dialog">';
+  domString += '<div class="modal-dialog" role="document">';
+  domString += '<div class="modal-content">';
+  domString += '<div class="modal-body">';
+  domString += '<p>Modal body text goes here.</p>';
+  domString += '</div>';
+  domString += '<div class="modal-footer">';
+  domString += '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>';
+  domString += '</div>';
+  domString += '</div>';
+  domString += '</div>';
+  domString += '</div>';
+  return domString;
+};
+
 const events = () => {
+  const messageText = document.getElementById('messageInputField').value;
   $('#messageInputField').keypress((event) => {
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 && messageText !== '') {
       event.preventDefault();
       addMessage.buildNewMessageObject();
+    } else if (event.keyCode === 13 && messageText === '') {
+      alertTextValidation();
     }
   });
 };
+
+// const events = () => {
+//   $('#messageInputField').keypress((event) => {
+//     if (event.keyCode === 13) {
+//       event.preventDefault();
+//       addMessage.buildNewMessageObject();
+//     }
+//   });
+// };
 
 export default { loadNavbar, events };
