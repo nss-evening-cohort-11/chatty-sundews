@@ -28,6 +28,14 @@ const users = [
 
   },
 ];
+
+const selectedUser = [];
+
+const setUser = (userId) => {
+  const foundUser = users.find((x) => x.id === userId);
+  selectedUser.push(foundUser);
+};
+
 const getUsers = () => users;
 
-export default { getUsers };
+export default { getUsers, setUser };

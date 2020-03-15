@@ -6,6 +6,11 @@ import darkMode from './components/darkMode/darkMode';
 import giphyJs from './components/giphy/giphy';
 import displayMessage from './components/displayMessage/displayMessage';
 
+const viewChanges = () => {
+  largeText.largeTextEvents();
+  darkMode.makeDarkEvents();
+};
+
 const init = () => {
   navL.loadNavbar();
   displayMessage.displayAllMessages();
@@ -14,6 +19,7 @@ const init = () => {
   largeText.largeTextEvents();
   darkMode.makeDarkEvents();
   giphyJs.giphy();
+  viewChanges();
 };
 
 init();
