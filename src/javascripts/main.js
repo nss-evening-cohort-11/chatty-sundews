@@ -5,13 +5,17 @@ import clearMessages from './components/clearMessages/clearMessages';
 import darkMode from './components/darkMode/darkMode';
 import displayMessage from './components/displayMessage/displayMessage';
 
+const viewChanges = () => {
+  largeText.largeTextEvents();
+  darkMode.makeDarkEvents();
+};
+
 const init = () => {
   navL.loadNavbar();
   displayMessage.displayAllMessages();
   navL.events();
   clearMessages.clearMessageEvent();
-  largeText.largeTextEvents();
-  darkMode.makeDarkEvents();
+  viewChanges();
 };
 
 init();
