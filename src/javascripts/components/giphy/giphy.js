@@ -1,5 +1,3 @@
-// import utilities from '../../helpers/utilities';
-
 import utilities from '../../helpers/utilities';
 
 const testGiphy = (data) => {
@@ -18,4 +16,8 @@ const giphy = () => {
   xhr.done((data) => testGiphy(data));
 };
 
-export default { giphy, testGiphy };
+const giphyEvents = () => {
+  $('#giph-btn').on('click', giphy);
+};
+
+export default { giphyEvents, testGiphy };

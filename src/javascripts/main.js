@@ -18,7 +18,7 @@ const init = () => {
   clearMessages.clearMessageEvent();
   largeText.largeTextEvents();
   darkMode.makeDarkEvents();
-  giphyJs.giphy();
+  giphyJs.giphyEvents();
   viewChanges();
 };
 
