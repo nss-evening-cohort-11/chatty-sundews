@@ -23,6 +23,16 @@ Dark-Mode
 Large-Text
 ![Sundew large-text](https://user-images.githubusercontent.com/51214463/76664555-cbd9e580-6552-11ea-8171-442b7abedafa.PNG)
 
+Add-Message
+![add-message](https://user-images.githubusercontent.com/51214463/76707082-76b8e380-66ba-11ea-8d85-dd4a480b33a2.PNG)
+
+Clear-Messages
+![clear-messages](https://user-images.githubusercontent.com/51214463/76707095-7e788800-66ba-11ea-80d4-7c1faf32366b.PNG)
+
+Delete-Message
+![delete-message](https://user-images.githubusercontent.com/51214463/76707099-81737880-66ba-11ea-8ff2-4512fd400b53.PNG)
+
+
 ## How to run:
 
 * Clone down this project from Github
