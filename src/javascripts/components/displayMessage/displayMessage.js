@@ -4,26 +4,30 @@ import userData from '../../helpers/data/userData';
 import utilities from '../../helpers/utilities';
 
 const displayAllMessages = () => {
-  const users = userData.getUsers();
+  const allMessages = messageData.getMessages();
   let domString = '';
-  messageData.getMessages().forEach((message) => {
-    const user = users.find((x) => x.id === message.id);
+  allMessages.forEach((message) => {
+    const users = userData.getUsers();
+    const findUser = users.find((x) => x.id === message.id);
     domString += `
     <div id="${message.messageId}" class="messageCard card mb-3">
       <div id="close-button" class="closebtn"><i class="fas fa-trash"></i>
       </div>
       <div>
-        <img src=${user.imgUrl} class="img-rounded col-3" alt="user">
           <div class="card-body p-0">
-            <h3 class="messageName card-text">${user.name}</h3>
               <p class="messageText text-center card-text">${message.text}</p>
               <p class="timestamp"><small>${message.timestamp}</small></p>
           </div>
       </div>
     </div>`;
+    return (findUser);
   });
   utilities.printToDom('message-container', domString);
 };
+
+// NOTE: deleted this from above card-body div in domString above: DELETE this note when user info added to a new message.
+//       <img src=${user.imgUrl} class="img-rounded col-3" alt="user">
+
 const deleteMessageEvent = (e) => {
   const selectedMessage = e.target.closest('.card').id;
   const messages = messageData.getMessages();
