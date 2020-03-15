@@ -26,11 +26,11 @@ const loadNavbar = () => {
   domString += '  </div>';
   domString += '  <div class="col-4 flex align-self-center">';
   domString += '    <div class="form-check row">';
-  domString += '      <input class="form-check-input" type="checkbox" value="dark theme" id="darkModeBtn">';
+  domString += '      <input type="checkbox" value="dark theme" id="darkModeBtn">';
   domString += '      <label class="form-check-label" for="darkModeBtn">Dark Theme</label>';
   domString += '      </div>';
   domString += '      <div class="form-check row">';
-  domString += '        <input class="form-check-input" type="checkbox" value="large-text" id="largeTextBtn">';
+  domString += '        <input type="checkbox" value="large-text" id="largeTextBtn">';
   domString += '        <label class="form-check-label" for="largeTextBtn">Large Text</label>';
   domString += '      </div>';
   domString += '    </div>';

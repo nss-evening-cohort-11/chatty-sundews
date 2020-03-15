@@ -1,7 +1,6 @@
 import moment from 'moment';
 import messageData from '../../helpers/data/messageData';
 import displayMessage from '../displayMessage/displayMessage';
-// import userData from '../../helpers/data/userData';
 
 const selectedRadio = () => {
   let selectedUser = '';
@@ -21,8 +20,6 @@ const buildNewMessageObject = () => {
     text: document.getElementById('messageInputField').value,
     timestamp: moment().format('LLL'),
   };
-  const findUser = newMessageObject.id;
-  console.error(findUser);
   messageData.setUpdatedMessageArray(newMessageObject);
   $('#messageInputField').val('');
   displayMessage.displayAllMessages();

@@ -26,9 +26,6 @@ const displayAllMessages = () => {
   utilities.printToDom('message-container', domString);
 };
 
-// NOTE: deleted this from above card-body div in domString above: DELETE this note when user info added to a new message.
-//       <img src=${user.imgUrl} class="img-rounded col-3" alt="user">
-
 const deleteMessageEvent = (e) => {
   const selectedMessage = e.target.closest('.card').id;
   const messages = messageData.getMessages();
