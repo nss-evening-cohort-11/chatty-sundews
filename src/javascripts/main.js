@@ -13,7 +13,7 @@ const init = () => {
   clearMessages.clearMessageEvent();
   largeText.largeTextEvents();
   darkMode.makeDarkEvents();
-  giphyJs.giphyFunction();
+  giphyJs.giphy();
 };
 
 init();
