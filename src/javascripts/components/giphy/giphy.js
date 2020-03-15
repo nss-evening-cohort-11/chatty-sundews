@@ -5,7 +5,7 @@ const testGiphy = (data) => {
   console.error(data);
   data.data.forEach((arr) => {
     const giphyImage = arr.images.original.url;
-    domString += `<img src="${giphyImage}">`;
+    domString += `<a href="#"><img src="${giphyImage}"></a>`;
     console.error(giphyImage);
   });
   utilities.printToDom('giphy', domString);
