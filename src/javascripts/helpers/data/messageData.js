@@ -41,7 +41,12 @@ const setUpdatedMessageArray = (newMessageObject) => {
   messages.push(newMessageObject);
 };
 
-const getMessages = () => messages;
+const getMessages = () => {
+  if (messages.length > 20) {
+    messages.shift(20);
+    return messages;
+  } return messages;
+};
 
 const emptyMessages = () => {
   messages = [];
