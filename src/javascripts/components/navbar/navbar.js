@@ -45,20 +45,7 @@ const loadNavbar = () => {
 };
 
 const alertTextValidation = () => {
-  let domString = '';
-  domString += '<div id="textAlert" class="modal" tabindex="-1" role="dialog">';
-  domString += '<div class="modal-dialog" role="document">';
-  domString += '<div class="modal-content">';
-  domString += '<div class="modal-body">';
-  domString += '<p>Modal body text goes here.</p>';
-  domString += '</div>';
-  domString += '<div class="modal-footer">';
-  domString += '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>';
-  domString += '</div>';
-  domString += '</div>';
-  domString += '</div>';
-  domString += '</div>';
-  return domString;
+  $('#exampleModal').modal('show');
 };
 
 const events = () => {
