@@ -14,13 +14,14 @@ const displayAllMessages = () => {
       <div id="close-button" class="closebtn"><i class="fas fa-trash"></i>
       </div>
       <div>
+      <img src=${findUser.imgUrl} class="img-rounded col-3" alt="user">
           <div class="card-body p-0">
+          <h3 class="messageName card-text">${findUser.name}</h3>
               <p class="messageText text-center card-text">${message.text}</p>
               <p class="timestamp"><small>${message.timestamp}</small></p>
           </div>
       </div>
     </div>`;
-    return (findUser);
   });
   utilities.printToDom('message-container', domString);
 };
