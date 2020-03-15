@@ -46,10 +46,6 @@ const loadNavbar = () => {
   utilities.printToDom('nav-container', domString);
 };
 
-const alertTextValidation = () => {
-  $('#exampleModal').modal('show');
-};
-
 const events = () => {
   $('#messageInputField').keypress((event) => {
     if (event.keyCode === 13) {
@@ -59,4 +55,4 @@ const events = () => {
   });
 };
 
-export default { loadNavbar, events , alertTextValidation };
+export default { loadNavbar, events };

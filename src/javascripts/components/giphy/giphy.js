@@ -2,11 +2,9 @@ import utilities from '../../helpers/utilities';
 
 const testGiphy = (data) => {
   let domString = '';
-  console.error(data);
   data.data.forEach((arr) => {
     const giphyImage = arr.images.original.url;
     domString += `<a href="#"><img src="${giphyImage}"></a>`;
-    console.error(giphyImage);
   });
   utilities.printToDom('giphy', domString);
 };
@@ -16,8 +14,13 @@ const giphy = () => {
   xhr.done((data) => testGiphy(data));
 };
 
+const giphyValidation = () => {
+  $('#giphyModal').modal('show');
+  giphy();
+};
+
 const giphyEvents = () => {
-  $('#giph-btn').on('click', giphy);
+  $('#giph-btn').on('click', giphyValidation);
 };
 
 export default { giphyEvents, testGiphy };
