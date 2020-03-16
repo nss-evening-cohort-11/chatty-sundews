@@ -11,26 +11,36 @@
 
 ## Description:
 
-Sundew Smoozer is a messaging application that allows the user to enter their name and message and add to the conversation. Additional options include deleting messages, setting dark mode or adjusting font-size. Also, users can include gifs in their messages!
+Sundew Smoozer is a messaging application that allows the user to select user and send message and add to the conversation. Additional options include deleting messages, setting dark mode, adjusting font-size, clear all messages and validation to ensure a message has been typed.
 
 ## Screenshots
 
-![sundew-smoozer](https://user-images.githubusercontent.com/51214463/76663154-2b81c200-654e-11ea-8b6f-8320786ed6b8.png)
+![Sundew-regular](https://user-images.githubusercontent.com/51214463/76795867-3cbe0f00-6798-11ea-8fd9-edda722f83b9.PNG)
 
 Dark-Mode
-![Sundew dark-mode](https://user-images.githubusercontent.com/51214463/76664578-ddbb8880-6552-11ea-941d-6fc8d0197414.PNG)
+![Sundew-dark](https://user-images.githubusercontent.com/51214463/76795937-5b240a80-6798-11ea-987e-73b898f076c4.PNG)
 
 Large-Text
-![Sundew large-text](https://user-images.githubusercontent.com/51214463/76664555-cbd9e580-6552-11ea-8171-442b7abedafa.PNG)
+![Sundew-large](https://user-images.githubusercontent.com/51214463/76795947-5f502800-6798-11ea-87dd-a34422257108.PNG)
 
 Add-Message
-![add-message](https://user-images.githubusercontent.com/51214463/76707082-76b8e380-66ba-11ea-8d85-dd4a480b33a2.PNG)
+![Sundew-add](https://user-images.githubusercontent.com/51214463/76796022-91618a00-6798-11ea-9cdc-4254a3101db5.PNG)
 
 Clear-Messages
-![clear-messages](https://user-images.githubusercontent.com/51214463/76707095-7e788800-66ba-11ea-80d4-7c1faf32366b.PNG)
+![Sundew-clear](https://user-images.githubusercontent.com/51214463/76796052-9aeaf200-6798-11ea-80b5-81bcef9921b5.PNG)
 
 Delete-Message
-![delete-message](https://user-images.githubusercontent.com/51214463/76707099-81737880-66ba-11ea-8ff2-4512fd400b53.PNG)
+![Sundew-delete](https://user-images.githubusercontent.com/51214463/76796069-a1796980-6798-11ea-9188-b0cbac421acd.PNG)
+
+Select-User
+![Sundew-select](https://user-images.githubusercontent.com/51214463/76796089-ab9b6800-6798-11ea-974b-60d683b93975.PNG)
+
+Only-Twenty-Messages
+![Sundew-20messages](https://user-images.githubusercontent.com/51214463/76796104-b35b0c80-6798-11ea-947d-185318073fb3.PNG)
+
+Validation
+![Sundew-validation](https://user-images.githubusercontent.com/51214463/76796111-b7872a00-6798-11ea-93a5-b1ff8dd137dd.PNG)
+
 
 
 ## How to run:
@@ -38,6 +48,8 @@ Delete-Message
 * Clone down this project from Github
 
 * Install http-server from npm
+
+* npm install
 
 * At the root of this project, run the following command: hs -p 8080
 
