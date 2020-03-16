@@ -1,12 +1,10 @@
 import './displayMessage.scss';
 import messageData from '../../helpers/data/messageData';
 import userData from '../../helpers/data/userData';
-import giphy from '../giphy/giphy';
 import utilities from '../../helpers/utilities';
 
 const displayAllMessages = () => {
   const allMessages = messageData.getMessages();
-  const giphyImage = giphy.sendSelectedGif();
   let domString = '';
   allMessages.forEach((message) => {
     const users = userData.getUsers();
@@ -18,14 +16,8 @@ const displayAllMessages = () => {
       <div>
       <img src=${findUser.imgUrl} class="img-rounded col-3" alt="user">
           <div class="card-body p-0">
-          <h3 class="messageName card-text">${findUser.name}</h3>`;
-    if ($('#gif-select').hasClass('visible')) {
-      console.error(giphyImage.url);
-      domString += `<img src="${giphyImage[0].url}">`;
-    } else {
-      domString += '';
-    }
-    domString += `<p class="messageText text-center card-text">${message.text}</p>
+          <h3 class="messageName card-text">${findUser.name}</h3>
+              <p class="messageText text-center card-text">${message.text}</p>
               <p class="timestamp"><small>${message.timestamp}</small></p>
           </div>
       </div>

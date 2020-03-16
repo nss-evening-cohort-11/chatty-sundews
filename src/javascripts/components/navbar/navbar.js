@@ -2,7 +2,6 @@ import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
 import './navbar.scss';
 import addMessage from '../addMessage/addMessage';
-import giphy from '../giphy/giphy';
 
 const radioButtons = () => {
   const radioUser = getInfo.getUsers();
@@ -57,7 +56,6 @@ const events = () => {
     if (event.keyCode === 13) {
       $('#gif-select').removeClass('visible');
       $('#gif-select').addClass('invisible');
-      giphy.sendSelectedGif();
 
       if (document.getElementById('messageInputField').value === '') {
         event.preventDefault();
