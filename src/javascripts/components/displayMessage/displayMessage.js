@@ -30,9 +30,9 @@ const displayAllMessages = () => {
 const deleteMessageEvent = (e) => {
   const selectedMessage = e.target.closest('.card').id;
   const selectedMessageUser = e.target.closest('.closebtn').id;
-  // const selectedMessageId = e.target.closest('.findUser.id').id;
+  const selectedMessageId = e.target.closest('.findUserId').id;
   const messages = messageData.getMessages();
-  // console.error(selectedMessageId);
+  console.error(selectedMessageId);
   const selectedMessagePosition = messages.findIndex((x) => x.messageId === selectedMessage);
   console.error(selectedMessage, selectedMessageUser, selectedMessagePosition);
   messages.splice(selectedMessagePosition, 1);
