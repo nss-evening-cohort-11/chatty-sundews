@@ -2,6 +2,14 @@ import utilities from '../../helpers/utilities';
 import gifs from '../../helpers/data/messageData';
 import './giphy.scss';
 
+// I am still not getting the proper object that is needed when I send it to the display message
+
+const sendSelectedGif = (image) => {
+  const selectedGifArray = image;
+  console.error(selectedGifArray);
+  return selectedGifArray;
+};
+
 const selectedGif = (e) => {
   const clickedGifImage = e.target.closest('.gif').id;
   const gifsArray = gifs.getGifsArray();
@@ -12,7 +20,7 @@ const selectedGif = (e) => {
   }
   $('#gif-select').removeClass('invisible');
   $('#gif-select').addClass('visible');
-  console.error(selectedGifImage);
+  sendSelectedGif(selectedGifImage);
 };
 
 const testGiphy = (giphy) => {
@@ -46,4 +54,4 @@ const giphyEvents = () => {
   $('#giph-btn').on('click', openModal);
 };
 
-export default { giphyEvents, testGiphy };
+export default { giphyEvents, testGiphy, sendSelectedGif };
