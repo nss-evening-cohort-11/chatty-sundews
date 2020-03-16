@@ -1,25 +1,24 @@
 
 @import '../../../styles/colors.scss';
 
-.navbar{
-  max-height: 230px;
-  overflow: auto;
-  font-size: 20px;
-  text-align: center;
+.radio-user{
+  padding: 0;
+  margin: 0;
 }
+.no-margin{
+  padding: 0;
+  margin: 0;
+}
+
 button {
   background-color: $dark-color2 !important;
 }
- .logo {
-   width:110px;
-   height: 105px;
-   margin: 5px;
- }
- 
- .checkbox {
-   text-align: center;
- }
- 
+.container{
+  text-align: center;
+  max-width: 97%;
+  margin: .75rem;
+}
+
  /* HIDE RADIO */
 .navbar-custom {
   background: rgb(130,184,188);
@@ -43,5 +42,5 @@ button {
 [type=radio]:checked + img {
   width: 75px;
   height: auto;
-  border: 3px solid $dark-color3;
+  border: 3px solid $light-color1;
 }
