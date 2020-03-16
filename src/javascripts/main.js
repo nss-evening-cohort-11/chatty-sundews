@@ -1,6 +1,6 @@
+import 'bootstrap';
 import '../styles/main.scss';
 import navL from './components/navbar/navbar';
-import 'bootstrap';
 import largeText from './components/largeText/largeText';
 import clearMessages from './components/clearMessages/clearMessages';
 import darkMode from './components/darkMode/darkMode';

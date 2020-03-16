@@ -12,6 +12,11 @@ const selectedRadio = () => {
   return selectedUser;
 };
 
+const enableClearButton = () => {
+  const clearButtonEnabled = document.getElementById('btn-clear');
+  clearButtonEnabled.disabled = false;
+};
+
 const buildNewMessageObject = () => {
   const allMessages = messageData.getMessages();
   const newMessageObject = {
@@ -22,6 +27,7 @@ const buildNewMessageObject = () => {
   };
   messageData.setUpdatedMessageArray(newMessageObject);
   $('#messageInputField').val('');
+  enableClearButton();
   displayMessage.displayAllMessages();
 };
 

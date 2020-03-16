@@ -2,9 +2,11 @@ import './largeText.scss';
 
 const largeTextFunction = () => {
   if ($('#largeTextBtn[type=checkbox]').is(':checked')) {
-    $('div:first').addClass('large-text new-display');
+    $('#message-container').addClass('large-text new-display');
+    $('#nav-container').addClass('large-text new-display');
   } else {
-    $('div:first').removeClass('large-text new-display');
+    $('#message-container').removeClass('large-text new-display');
+    $('#nav-container').removeClass('large-text new-display');
   }
 };
 

@@ -7,23 +7,29 @@
   font-size: 20px;
   text-align: center;
 }
-button {
-  background-color: $dark-color2 !important;
+
+.radio-user{
+  padding: 0;
+  margin: 0;
 }
- .logo {
-   width:110px;
-   height: 105px;
-   margin: 5px;
- }
- 
- .checkbox {
-   text-align: center;
- }
+.no-margin{
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: $light-color4 !important;
+}
 
  .invisible {
    display: none;
  }
- 
+.container{
+  text-align: center;
+  max-width: 97%;
+  margin: .75rem;
+}
+
  /* HIDE RADIO */
 .navbar-custom {
   background: rgb(130,184,188);
@@ -47,5 +53,5 @@ button {
 [type=radio]:checked + img {
   width: 75px;
   height: auto;
-  border: 3px solid $dark-color3;
+  border: 3px solid $light-color1;
 }
