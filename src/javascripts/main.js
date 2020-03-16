@@ -1,3 +1,4 @@
+import 'bootstrap';
 import '../styles/main.scss';
 import navL from './components/navbar/navbar';
 import largeText from './components/largeText/largeText';

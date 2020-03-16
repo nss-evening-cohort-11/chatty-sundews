@@ -17,6 +17,7 @@ const radioButtons = () => {
   });
   return domString;
 };
+
 const loadNavbar = () => {
   let domString = '';
   domString += '<nav class="navbar navbar-custom fixed-top navbar-light bg-light justify-content-center">';
@@ -44,11 +45,20 @@ const loadNavbar = () => {
   utilities.printToDom('nav-container', domString);
 };
 
+const alertTextValidation = () => {
+  $('#validationTextInput').modal('show');
+};
+
 const events = () => {
   $('#messageInputField').keypress((event) => {
     if (event.keyCode === 13) {
-      event.preventDefault();
-      addMessage.buildNewMessageObject();
+      if (document.getElementById('messageInputField').value === '') {
+        event.preventDefault();
+        alertTextValidation();
+      } else {
+        addMessage.buildNewMessageObject();
+        event.preventDefault();
+      }
     }
   });
 };
