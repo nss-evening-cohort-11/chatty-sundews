@@ -28,7 +28,7 @@ const loadNavbar = () => {
   domString += '  </div>';
   domString += '<form class="ml-5 mr-5">';
   domString += '<div class="row text-align-center m-0">';
-  domString += '    <input id="messageInputField" class="form-control col m-0 text-center" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
+  domString += '    <input id="messageInputField" class="form-control col m-0" type="text" placeholder="Select User above, add message and hit ENTER" aria-label="text">';
   domString += '</div>';
   domString += '</form>';
   domString += '<div class="container align-content-center  m-auto pt-2">';

@@ -11,7 +11,8 @@ const displayAllMessages = () => {
     const findUser = users.find((x) => x.id === message.id);
     domString += `
     <div id="${message.messageId}" class="messageCard card mb-3">
-      <div id="close-button" class="closebtn"><i class="fas fa-trash"></i>
+      <div id="${message.id}" class="closebtn"><i class="fas fa-trash"></i>
+      <div id="${findUser.id}" class="findUserId"></div>
       </div>
       <div>
       <img src=${findUser.imgUrl} class="img-rounded col-3" alt="user">
@@ -28,8 +29,12 @@ const displayAllMessages = () => {
 
 const deleteMessageEvent = (e) => {
   const selectedMessage = e.target.closest('.card').id;
+  const selectedMessageUser = e.target.closest('.closebtn').id;
+  // const selectedMessageId = e.target.closest('.findUser.id').id;
   const messages = messageData.getMessages();
+  // console.error(selectedMessageId);
   const selectedMessagePosition = messages.findIndex((x) => x.messageId === selectedMessage);
+  console.error(selectedMessage, selectedMessageUser, selectedMessagePosition);
   messages.splice(selectedMessagePosition, 1);
   displayAllMessages();
 };
