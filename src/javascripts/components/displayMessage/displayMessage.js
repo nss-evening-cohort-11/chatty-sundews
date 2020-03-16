@@ -9,9 +9,9 @@ const displayAllMessages = () => {
   allMessages.forEach((message) => {
     const users = userData.getUsers();
     const findUser = users.find((x) => x.id === message.id);
-    domString += `<div id="${message.messageId}" class="messageCard card mb-3">`;
-    domString += '<div class="findUserId"></div>';
-    domString += `<div id="${message.id}" class="closebtn"><i id="${findUser.id}" class="fas fa-trash"></i>
+    domString += `
+    <div id="${message.messageId}" class="messageCard card mb-3">
+      <div id="close-button" class="closebtn"><i class="fas fa-trash"></i>
       </div>
       <div>
       <img src=${findUser.imgUrl} class="img-rounded col-3" alt="user">
@@ -28,15 +28,10 @@ const displayAllMessages = () => {
 
 const deleteMessageEvent = (e) => {
   const selectedMessage = e.target.closest('.card').id;
-  const selectedMessageUser = e.target.closest('.closebtn').id;
-  const selectedMessageId = e.target.closest('.fas').id;
   const messages = messageData.getMessages();
   const selectedMessagePosition = messages.findIndex((x) => x.messageId === selectedMessage);
-  if (selectedMessageUser === selectedMessageId) {
-    console.error();
-    messages.splice(selectedMessagePosition, 1);
-    displayAllMessages();
-  }
+  messages.splice(selectedMessagePosition, 1);
+  displayAllMessages();
 };
 
 $('body').on('click', '.closebtn', deleteMessageEvent);
