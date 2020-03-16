@@ -17,6 +17,7 @@ const radioButtons = () => {
   });
   return domString;
 };
+
 const loadNavbar = () => {
   let domString = '';
   domString += '<nav class="navbar navbar-custom fixed-top navbar-light bg-light justify-content-center">';
@@ -45,28 +46,21 @@ const loadNavbar = () => {
 };
 
 const alertTextValidation = () => {
-  $('#exampleModal').modal('show');
+  $('#validationTextInput').modal('show');
 };
 
 const events = () => {
-  const messageText = document.getElementById('messageInputField').value;
   $('#messageInputField').keypress((event) => {
-    if (event.keyCode === 13 && messageText !== '') {
-      event.preventDefault();
-      addMessage.buildNewMessageObject();
-    } else if (event.keyCode === 13 && messageText === '') {
-      alertTextValidation();
+    if (event.keyCode === 13) {
+      if (document.getElementById('messageInputField').value === '') {
+        event.preventDefault();
+        alertTextValidation();
+      } else {
+        addMessage.buildNewMessageObject();
+        event.preventDefault();
+      }
     }
   });
 };
-
-// const events = () => {
-//   $('#messageInputField').keypress((event) => {
-//     if (event.keyCode === 13) {
-//       event.preventDefault();
-//       addMessage.buildNewMessageObject();
-//     }
-//   });
-// };
 
 export default { loadNavbar, events };
