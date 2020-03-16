@@ -1,12 +1,32 @@
 import utilities from '../../helpers/utilities';
+import gifs from '../../helpers/data/messageData';
+import './giphy.scss';
 
-const testGiphy = (data) => {
+const selectedGif = (e) => {
+  const clickedGifImage = e.target.closest('.gif').id;
+  const gifsArray = gifs.getGifsArray();
+  const selectedGifImage = gifsArray.filter((x) => x.id === clickedGifImage);
+  if ($(`#${clickedGifImage}`).not('.selected-gif')) {
+    $('.gif').removeClass('selected-gif');
+    $(`#${clickedGifImage}`).addClass('selected-gif');
+  }
+  console.error(selectedGifImage);
+};
+
+const testGiphy = (giphy) => {
   let domString = '';
-  data.data.forEach((arr) => {
-    const giphyImage = arr.images.original.url;
-    domString += `<a href="#"><img src="${giphyImage}"></a>`;
+  const gifsArray = gifs.getGifsArray();
+  giphy.data.forEach((giphyArray) => {
+    const giphyImage = giphyArray.images.original.url;
+    const gifObject = {
+      id: giphyArray.id,
+      url: giphyImage,
+    };
+    domString += `<a href="#"><img id="${giphyArray.id}" class="gif rounded col-5 m-1 p-0" src="${giphyImage}"></a>`;
+    gifsArray.push(gifObject);
   });
   utilities.printToDom('giphy', domString);
+  $('.gif').on('click', selectedGif);
 };
 
 const giphy = () => {
