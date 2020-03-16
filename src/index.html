@@ -40,15 +40,14 @@
       </div>
       <div class="modal-body">
         <h6>Background Color</h6>
-        <select class="custom-select">
+        <select id="background-color" class="background" name="background">
           <option selected>Open this menu to select your favorite background color:</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+          <option value="1" class="background" name="background">Light (Default)</option>
+          <option value="2" class="background" name="background">Dark</option>
         </select>
         <br></br>
         <h6>Font Color</h6>
-        <select class="custom-select">
+        <select id="font-color" class="custom-select">
           <option selected>Open this menu to select your favorite font color:</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -57,7 +56,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button id="btn-save-theme-changes" type="button" class="btn btn-primary">Save Changes</button>
+        <button id="btn-save-theme-changes" type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
       </div>
     </div>
   </div>

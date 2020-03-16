@@ -1,13 +1,17 @@
-import './customThemes.scss';
+import '../darkMode/darkMode.scss';
 
-const applyCustomTheme1 = () => {
-  if ($('#customTheme1[type=radio]').is(':checked')) {
-    $('#message-container').addClass('tempColor');
+const getBackground = () => {
+  const selectedBackground = document.querySelector('.background');
+  const output = selectedBackground.value;
+  console.error(output);
+  if (output === '2') {
+    $('#message-container').addClass('dark dark-display');
+    $('#nav-container').addClass('dark dark-display');
   }
 };
 
 const applyCustomThemeClick = () => {
-  $('#btn-save-theme-changes').on('click', applyCustomTheme1);
+  $('#btn-save-theme-changes').on('click', getBackground());
 };
 
 const changeThemeEvent = () => {
@@ -18,4 +22,4 @@ const changeThemeButtonClick = () => {
   $('#btn-change-theme').on('click', changeThemeEvent);
 };
 
-export default { changeThemeButtonClick, applyCustomThemeClick };
+export default { changeThemeButtonClick, applyCustomThemeClick, getBackground };

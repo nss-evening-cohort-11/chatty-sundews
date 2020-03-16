@@ -19,6 +19,7 @@ const init = () => {
   clearMessages.clearMessageEvent();
   viewChanges();
   customThemes.changeThemeButtonClick();
+  customThemes.applyCustomThemeClick();
 };
 
 init();
