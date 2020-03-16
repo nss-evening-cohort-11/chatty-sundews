@@ -10,6 +10,8 @@ const selectedGif = (e) => {
     $('.gif').removeClass('selected-gif');
     $(`#${clickedGifImage}`).addClass('selected-gif');
   }
+  $('#gif-select').removeClass('invisible');
+  $('#gif-select').addClass('visible');
   console.error(selectedGifImage);
 };
 

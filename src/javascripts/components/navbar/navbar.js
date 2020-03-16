@@ -42,6 +42,7 @@ const loadNavbar = () => {
   domString += '      <button id="btn-clear" class="btn btn-block ml-5">CLEAR</button>';
   domString += '    </form>';
   domString += '</div>';
+  domString += '<p id="gif-select" class="invisible">Gif Selected</p>';
   domString += '</nav>';
   utilities.printToDom('nav-container', domString);
 };
@@ -51,6 +52,8 @@ const events = () => {
     if (event.keyCode === 13) {
       event.preventDefault();
       addMessage.buildNewMessageObject();
+      $('#gif-select').removeClass('visible');
+      $('#gif-select').addClass('invisible');
     }
   });
 };
