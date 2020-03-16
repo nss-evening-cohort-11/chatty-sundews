@@ -2,7 +2,7 @@ import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
 import './navbar.scss';
 import addMessage from '../addMessage/addMessage';
-// import giphy from '../giphy/giphy';
+import giphy from '../giphy/giphy';
 
 const radioButtons = () => {
   const radioUser = getInfo.getUsers();
@@ -55,11 +55,9 @@ const alertTextValidation = () => {
 const events = () => {
   $('#messageInputField').keypress((event) => {
     if (event.keyCode === 13) {
-      event.preventDefault();
-      addMessage.buildNewMessageObject();
       $('#gif-select').removeClass('visible');
       $('#gif-select').addClass('invisible');
-      // giphy.sendSelectedGif();
+      giphy.sendSelectedGif();
 
       if (document.getElementById('messageInputField').value === '') {
         event.preventDefault();

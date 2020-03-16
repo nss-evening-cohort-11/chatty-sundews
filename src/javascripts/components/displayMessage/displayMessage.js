@@ -20,7 +20,7 @@ const displayAllMessages = () => {
           <div class="card-body p-0">
           <h3 class="messageName card-text">${findUser.name}</h3>`;
     if ($('#gif-select').hasClass('visible')) {
-      console.error(giphyImage[0].url);
+      console.error(giphyImage.url);
       domString += `<img src="${giphyImage[0].url}">`;
     } else {
       domString += '';
