@@ -1,16 +1,38 @@
 import '../darkMode/darkMode.scss';
 
 const getBackground = () => {
-  const selectedBackground = $('#background-color :selected'.value);
+  const selectedBackground = $('#background-color').val();
   console.error(selectedBackground);
-  if (selectedBackground === '2') {
-    $('#message-container').addClass('dark dark-display');
-    $('#nav-container').addClass('dark dark-display');
+  if (selectedBackground === 2) {
+    $('#message-container').addClass('dark-display');
+    $('#nav-container').addClass('dark-display');
+    console.error('changing the background');
+  } else {
+    $('#message-container').removeClass('dark-display');
+    $('#nav-container').removeClass('dark-display');
   }
 };
 
+const getFont = () => {
+  const selectedFont = $('#font-color').val();
+  console.error(selectedFont);
+  if (selectedFont === 2) {
+    $('#message-container').addClass('dark');
+    $('#nav-container').addClass('dark');
+    console.error('changing the font color');
+  } else {
+    $('#message-container').removeClass('dark');
+    $('#nav-container').removeClass('dark');
+  }
+};
+
+const applyCustomThemeEvent = () => {
+  getBackground();
+  getFont();
+};
+
 const applyCustomThemeClick = () => {
-  $('#btn-save-theme-changes').on('click', getBackground());
+  $('#btn-save-theme-changes').on('click', applyCustomThemeEvent);
 };
 
 const changeThemeEvent = () => {
@@ -21,4 +43,4 @@ const changeThemeButtonClick = () => {
   $('#btn-change-theme').on('click', changeThemeEvent);
 };
 
-export default { changeThemeButtonClick, applyCustomThemeClick, getBackground };
+export default { changeThemeButtonClick, applyCustomThemeClick, applyCustomThemeEvent };
