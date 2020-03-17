@@ -16,6 +16,24 @@
 }
 }
 
+.darker-font {
+  span {
+    color:black;
+  }
+
+  .messageName {
+    color:black;
+  }
+
+  .messageText {
+    color: black;
+  }
+
+  .timestamp {
+    color:black;
+}
+}
+
 .dark-display {
   .messageCard {
     background-color: #415c5e;

@@ -3,7 +3,7 @@ import '../darkMode/darkMode.scss';
 const getBackground = () => {
   const selectedBackground = $('#background-color').val();
   console.error(selectedBackground);
-  if (selectedBackground === 2) {
+  if (selectedBackground === '2') {
     $('#message-container').addClass('dark-display');
     $('#nav-container').addClass('dark-display');
     console.error('changing the background');
@@ -16,13 +16,13 @@ const getBackground = () => {
 const getFont = () => {
   const selectedFont = $('#font-color').val();
   console.error(selectedFont);
-  if (selectedFont === 2) {
-    $('#message-container').addClass('dark');
-    $('#nav-container').addClass('dark');
+  if (selectedFont === '2') {
+    $('#message-container').addClass('darker-font');
+    $('#nav-container').addClass('darker-font');
     console.error('changing the font color');
   } else {
-    $('#message-container').removeClass('dark');
-    $('#nav-container').removeClass('dark');
+    $('#message-container').removeClass('darker-font');
+    $('#nav-container').removeClass('darker-font');
   }
 };
 
