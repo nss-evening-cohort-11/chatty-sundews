@@ -9,7 +9,9 @@
 
 <body>
   <div id="nav-container"></div>
+
   <div id="message-container"></div>
+
   <div class="modal fade show" id="validationTextInput" tabindex="-1" role="dialog" aria-labelledby="validationTextTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -22,6 +24,38 @@
         <div class="modal-body">
           You must enter a message if you want to add to the conversation!
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade show" id="modalCustomThemes" tabindex="-1" role="dialog" aria-labelledby="modalCustomThemesTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCustomThemesTitle">Pick Your Theme!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Background Color</h6>
+        <select id="background-color" class="background" name="background">
+          <option selected>Open this menu to select your favorite background color:</option>
+          <option value="1" class="background" name="background">Light (Default)</option>
+          <option value="2" class="background" name="background">Dark</option>
+        </select>
+        <br></br>
+        <h6>Font Color</h6>
+        <select id="font-color" class="font" name="font">
+          <option selected>Open this menu to select your favorite font color:</option>
+          <option value="1" class="font" name="font">White (default)</option>
+          <option value="2" class="font" name="font">Dark</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="btn-save-theme-changes" type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
       </div>
     </div>
   </div>
