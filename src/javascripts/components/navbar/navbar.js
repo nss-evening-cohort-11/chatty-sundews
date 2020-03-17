@@ -32,8 +32,8 @@ const loadNavbar = () => {
   domString += '</div>';
   domString += '</form>';
   domString += '<div class="container align-content-center  m-auto pt-2">';
-  domString += '    <input class="" type="checkbox" value="dark theme" class="mt-1 " id="darkModeBtn">';
-  domString += '    <label class="form-check-label" for="darkModeBtn">Dark Theme</label>';
+  // domString += '    <input class="" type="checkbox" value="dark theme" class="mt-1 " id="darkModeBtn">';
+  // domString += '    <label class="form-check-label" for="darkModeBtn">Dark Theme</label>';
   domString += '    <input type="checkbox" value="large-text" class="m-1" id="largeTextBtn">';
   domString += '    <label class="form-check-label" for="largeTextBtn">Large Text</label>';
   domString += '    <button id="btn-change-theme" class="btn ml-5">CHANGE THEME</button>';
