@@ -2,9 +2,9 @@ import utilities from '../../helpers/utilities';
 import gifs from '../../helpers/data/messageData';
 import './giphy.scss';
 
-const giphyImageArray = [];
+const giphyImageArray = [{ id: 'test', url: 'https://giphy.com/gifs/nyan-cat-sIIhZliB2McAo' }];
 
-const getGiphyImageArray = () => giphyImageArray;
+const getGiphyImageArray = () => giphyImageArray[0];
 
 const selectedGif = (e) => {
   const clickedGifImage = e.target.closest('.gif').id;
