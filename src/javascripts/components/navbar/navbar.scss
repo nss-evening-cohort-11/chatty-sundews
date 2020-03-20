@@ -1,6 +1,13 @@
 
 @import '../../../styles/colors.scss';
 
+.navbar{
+  max-height: 245px;
+  overflow: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
 .radio-user{
   padding: 0;
   margin: 0;
@@ -13,6 +20,10 @@
 button {
   background-color: $light-color4 !important;
 }
+
+ .invisible {
+   display: none;
+ }
 .container{
   text-align: center;
   max-width: 97%;

@@ -11,6 +11,27 @@
   <div id="nav-container"></div>
 
   <div id="message-container"></div>
+<!-- Giphy Modal -->
+  <div class="modal fade" id="giphyModal" tabindex="-1" role="dialog" aria-labelledby="giphyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="giphyModalLabel">Giphy Select</h5>
+          <div class="modal-body">
+          <div class="row m-2">
+            <input id="giphy-search" class="col-10 m-1" type="text" placeholder="enter gif you want to search">
+            <button id="giph-search-btn" class="btn btn-primary col ml-1">Search</button>
+          </div>
+            <div id="giphy"></div>
+          </div>
+          <div class="modal-footer align-self-end">
+            <div class="row">
+            <button id="close-btn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade show" id="validationTextInput" tabindex="-1" role="dialog" aria-labelledby="validationTextTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -60,7 +81,6 @@
     </div>
   </div>
 </div>
- 
 </body>
 
 </html>
