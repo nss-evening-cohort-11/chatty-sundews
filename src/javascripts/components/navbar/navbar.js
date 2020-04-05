@@ -1,7 +1,10 @@
 import utilities from '../../helpers/utilities';
 import getInfo from '../../helpers/data/userData';
 import './navbar.scss';
+// eslint-disable-next-line import/no-cycle
 import addMessage from '../addMessage/addMessage';
+// eslint-disable-next-line import/no-cycle
+import displayMessage from '../displayMessage/displayMessage';
 
 const radioButtons = () => {
   const radioUser = getInfo.getUsers();
@@ -9,7 +12,7 @@ const radioButtons = () => {
   radioUser.forEach((user) => {
     domString += '<div class="form-check-inline">';
     domString += '  <label>';
-    domString += `    <input id="${user.id}" class="form-check-input" type="radio" name="inlineRadioOptions" value="small">`;
+    domString += `    <input id="${user.id}" class="form-check-input radio-name" type="radio" name="inlineRadioOptions" value="small">`;
     domString += `    <img class="p-1 form-check-label rounded-circle" src="${user.imgUrl}" width="60px" height="60px">`;
     domString += `    <p class="text-center no-margin">${user.name}</p>`;
     domString += '  </label>';
@@ -52,6 +55,11 @@ const alertTextValidation = () => {
   $('#validationTextInput').modal('show');
 };
 
+const updateLoggedUser = () => {
+  addMessage.selectedRadio();
+  displayMessage.displayAllMessages();
+};
+
 const events = () => {
   $('#messageInputField').keypress((event) => {
     if (event.keyCode === 13) {
@@ -67,6 +75,8 @@ const events = () => {
       }
     }
   });
+  // Anca S: Event listener below triggering the updateLoggedUser function when a user radio button is selected. That function (above) gets the new 'logged-in' user & reloads the messages to redisplay the Delete icon only on appropriate messages.
+  $('.radio-name').click(updateLoggedUser);
 };
 
 export default { loadNavbar, events };
